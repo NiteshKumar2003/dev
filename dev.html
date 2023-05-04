@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library Management Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Library Management Page</h1>
+      <nav>
+        <ul>
+          <li><a href="#book-list">Book List</a></li>
+          <li><a href="#filters">Filters</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search books...">
+        <button>Search</button>
+      </div>
+    </header>
+    
+    <main>
+      <section id="book-list">
+        <h2>Book List</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Subject</th>
+              <th>Publish Date</th>
+              <th>Availability</th>
+              <th>Borrowing Options</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Book data will be dynamically generated here -->
+          </tbody>
+        </table>
+        
+        <div class="pagination">
+          <!-- Page numbers will be dynamically generated here -->
+        </div>
+      </section>
+      
+      <section id="filters">
+        <h2>Filters</h2>
+        <div>
+          <label>Title:</label>
+          <input type="text" id="title-filter">
+          <span id="title-count">(0)</span>
+        </div>
+        <div>
+          <label>Author:</label>
+          <input type="text" id="author-filter">
+          <span id="author-count">(0)</span>
+        </div>
+        <div>
+          <label>Subject:</label>
+          <select id="subject-filter">
+            <option value="">All</option>
+            <!-- Subject options will be dynamically generated here -->
+          </select>
+          <span id="subject-count">(0)</span>
+        </div>
+        <div>
+          <label>Publish Date:</label>
+          <input type="date" id="publish-date-filter">
+          <span id="publish-date-count">(0)</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
